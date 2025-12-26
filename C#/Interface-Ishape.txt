@@ -1,0 +1,62 @@
+using System;
+
+interface IShape
+{
+    double Area();
+    double Perimeter();
+}
+
+class Circle : IShape
+{
+    public double Radius { get; set; }
+
+    public Circle(double radius)
+    {
+        Radius = radius;
+    }
+
+    public double Area()
+    {
+        return Math.PI * Radius * Radius;
+    }
+
+    public double Perimeter()
+    {
+        return 2 * Math.PI * Radius;
+    }
+}
+
+class Rectangle : IShape
+{
+    public double Width { get; set; }
+    public double Height { get; set; }
+
+    public Rectangle(double width, double height)
+    {
+        Width = width;
+        Height = height;
+    }
+
+    public double Area()
+    {
+        return Width * Height;
+    }
+
+    public double Perimeter()
+    {
+        return 2 * (Width + Height);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        IShape circle = new Circle(5);
+        IShape rectangle = new Rectangle(4, 6);
+
+        Console.WriteLine($"Circle Area: {circle.Area()}, Perimeter: {circle.Perimeter()}");
+        Console.WriteLine($"Rectangle Area: {rectangle.Area()}, Perimeter: {rectangle.Perimeter()}");
+    }
+}
+

@@ -1,0 +1,185 @@
+﻿@model Assignment_4.ViewModels.DashboardViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <h1 class="display-4 text-center mb-4">Movie Dashboard</h1>
+
+    <h2 class="mt-4">Movies</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Rating</th>
+                <th>Budget</th>
+                <th>Gross</th>
+                <th>Release Date</th>
+                <th>Genre</th>
+                <th>Runtime</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Movies != null && Model.Movies.Any())
+            {
+                foreach (var movie in Model.Movies)
+                {
+                    <tr>
+                        <td>@movie.Id</td>
+                        <td>@movie.Title</td>
+                        <td>@movie.Rating</td>
+                        <td>@movie.Budget</td>
+                        <td>@movie.Gross</td>
+                        <td>@movie.ReleaseDate?.ToString("yyyy-MM-dd")</td>
+                        <td>@movie.Genre</td>
+                        <td>@movie.Runtime</td>
+                        <td>@movie.Summary</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="9" class="text-center">No movies found.</td></tr>
+            }
+        </tbody>
+</table>
+
+    <h2 class="mt-5 text-danger">Top 10 Flop Movies</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Budget</th>
+                <th>Gross</th>
+                <th>Loss</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Movies != null && Model.Movies.Any())
+            {
+                var flopMovies = Model.Movies.OrderBy(m => (m.Gross ?? 0) - (m.Budget ?? 0)).Take(10);
+                foreach (var movie in flopMovies)
+                {
+                    <tr>
+                        <td>@movie.Id</td>
+                        <td>@movie.Title</td>
+                        <td>@movie.Budget</td>
+                        <td>@movie.Gross</td>
+                        <td>@((movie.Budget ?? 0) - (movie.Gross ?? 0))</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="5" class="text-center">No movies found.</td></tr>
+            }
+        </tbody>
+    </table>
+
+    <h2 class="mt-5 text-success">Top 5 Highest Paid Actors & Their Roles</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Actor Name</th>
+                <th>Pay</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Characters != null && Model.Characters.Any() && Model.Actors != null && Model.Actors.Any())
+            {
+                var topPaidRoles = Model.Characters.OrderByDescending(c => c.Pay).Take(5);
+                foreach (var character in topPaidRoles)
+                {
+                    var actor = Model.Actors.FirstOrDefault(a => a.Id == character.ActorID);
+                    <tr>
+                        <td>@actor?.Name</td>
+                        <td>@character.Pay</td>
+                        <td>@character.CharacterName</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="3" class="text-center">No data found.</td></tr>
+            }
+        </tbody>
+    </table>
+
+    <h2 class="mt-5">Actors</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Date of Birth</th>
+                <th>Birth City</th>
+                <th>Birth Country</th>
+                <th>Height (inches)</th>
+                <th>Biography</th>
+                <th>Gender</th>
+                <th>Net Worth</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Actors != null && Model.Actors.Any())
+            {
+                foreach (var actor in Model.Actors)
+                {
+                    <tr>
+                        <td>@actor.Id</td>
+                        <td>@actor.Name</td>
+                        <td>@actor.DateOfBirth?.ToString("yyyy-MM-dd")</td>
+                        <td>@actor.BirthCity</td>
+                        <td>@actor.BirthCountry</td>
+                        <td>@actor.HeightInches</td>
+                        <td>@actor.Biography</td>
+                        <td>@actor.Gender</td>
+                        <td>@actor.NetWorth</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="9" class="text-center">No actors found.</td></tr>
+            }
+        </tbody>
+    </table>
+
+    <h2 class="mt-5">Characters</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Movie ID</th>
+                <th>Actor ID</th>
+                <th>Character Name</th>
+                <th>Pay</th>
+                <th>Screentime</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Characters != null && Model.Characters.Any())
+            {
+                foreach (var character in Model.Characters)
+                {
+                    <tr>
+                        <td>@character.Id</td>
+                        <td>@character.MovieID</td>
+                        <td>@character.ActorID</td>
+                        <td>@character.CharacterName</td>
+                        <td>@character.Pay</td>
+                        <td>@character.Screentime</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="6" class="text-center">No characters found.</td></tr>
+            }
+        </tbody>
+    </table>
+</div>

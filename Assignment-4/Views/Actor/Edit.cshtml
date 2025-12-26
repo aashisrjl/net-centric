@@ -1,0 +1,56 @@
+@model Assignment_4.Models.Actor
+@{
+    ViewData["Title"] = "Edit Actor";
+}
+
+<h2>Edit Actor</h2>
+<form asp-action="Edit" method="post" class="mt-4">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" required />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="DateOfBirth" class="form-label"></label>
+        <input asp-for="DateOfBirth" class="form-control" type="date" required />
+        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="BirthCity" class="form-label"></label>
+        <input asp-for="BirthCity" class="form-control" required />
+        <span asp-validation-for="BirthCity" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="BirthCountry" class="form-label"></label>
+        <input asp-for="BirthCountry" class="form-control" required />
+        <span asp-validation-for="BirthCountry" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="HeightInches" class="form-label"></label>
+        <input asp-for="HeightInches" class="form-control" type="number" step="0.1" required />
+        <span asp-validation-for="HeightInches" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Biography" class="form-label"></label>
+        <textarea asp-for="Biography" class="form-control"></textarea>
+        <span asp-validation-for="Biography" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Gender" class="form-label"></label>
+        <select asp-for="Gender" class="form-control">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <span asp-validation-for="Gender" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="NetWorth" class="form-label"></label>
+        <input asp-for="NetWorth" class="form-control" type="number" step="0.01" required />
+        <span asp-validation-for="NetWorth" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+   <a asp-action="actorlist" class="btn btn-secondary ms-2">Cancel</a>
+</form>

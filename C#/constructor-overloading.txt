@@ -1,0 +1,62 @@
+using System;
+
+class Book
+{
+    public string Title { get; set; }
+    public string Author { get; set; }
+    public int Year { get; set; }
+
+    // Default constructor
+    public Book()
+    {
+        Title = "Unknown";
+        Author = "Unknown";
+        Year = 0;
+    }
+
+    // Constructor with title
+    public Book(string title)
+    {
+        Title = title;
+        Author = "Unknown";
+        Year = 0;
+    }
+
+    // Constructor with title and author
+    public Book(string title, string author)
+    {
+        Title = title;
+        Author = author;
+        Year = 0;
+    }
+
+    // Constructor with title, author, and year
+    public Book(string title, string author, int year)
+    {
+        Title = title;
+        Author = author;
+        Year = year;
+    }
+
+    public void Display()
+    {
+        Console.WriteLine($"Title: {Title}, Author: {Author}, Year: {Year}");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Book b1 = new Book(); // Default constructor
+        Book b2 = new Book("C# Programming"); // Title only
+        Book b3 = new Book("C# Programming", "Aashis Rijal"); // Title + Author
+        Book b4 = new Book("C# Programming", "Aashis Rijal", 2025); // Title + Author + Year
+
+        b1.Display();
+        b2.Display();
+        b3.Display();
+        b4.Display();
+    }
+}
+

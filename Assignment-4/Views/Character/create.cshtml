@@ -1,0 +1,35 @@
+@model Assignment_4.Models.Character
+
+@{
+    ViewData["Title"] = "Create Character";
+}
+
+<h2>Create Character</h2>
+<form asp-action="Create" method="post" class="mt-4">
+    <div class="form-group mb-3">
+        <label asp-for="MovieID" class="form-label"></label>
+        <input asp-for="MovieID" class="form-control" required />
+        <span asp-validation-for="MovieID" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="ActorID" class="form-label"></label>
+        <input asp-for="ActorID" class="form-control" required />
+        <span asp-validation-for="ActorID" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="CharacterName" class="form-label"></label>
+        <input asp-for="CharacterName" class="form-control" required />
+        <span asp-validation-for="CharacterName" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Pay" class="form-label"></label>
+        <input asp-for="Pay" class="form-control" required />
+        <span asp-validation-for="Pay" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Screentime" class="form-label"></label>
+        <input asp-for="Screentime" class="form-control" required />
+        <span asp-validation-for="Screentime" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

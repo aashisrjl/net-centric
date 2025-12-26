@@ -1,0 +1,15 @@
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/bin/Debug/net8.0/oops
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/bin/Debug/net8.0/oops.deps.json
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/bin/Debug/net8.0/oops.runtimeconfig.json
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/bin/Debug/net8.0/oops.dll
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/bin/Debug/net8.0/oops.pdb
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/obj/Debug/net8.0/oops.GeneratedMSBuildEditorConfig.editorconfig
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/obj/Debug/net8.0/oops.AssemblyInfoInputs.cache
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/obj/Debug/net8.0/oops.AssemblyInfo.cs
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/obj/Debug/net8.0/oops.csproj.CoreCompileInputs.cache
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/obj/Debug/net8.0/oops.sourcelink.json
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/obj/Debug/net8.0/oops.dll
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/obj/Debug/net8.0/refint/oops.dll
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/obj/Debug/net8.0/oops.pdb
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/obj/Debug/net8.0/oops.genruntimeconfig.cache
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-2/oops/obj/Debug/net8.0/ref/oops.dll

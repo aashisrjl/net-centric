@@ -1,0 +1,78 @@
+using System;
+
+class DivisionExample
+{
+    static void Main()
+    {
+        Console.Write("Enter numerator: ");
+        int numerator = int.Parse(Console.ReadLine());
+
+        Console.Write("Enter denominator: ");
+        int denominator = int.Parse(Console.ReadLine());
+
+        try
+        {
+            int result = numerator / denominator;
+            Console.WriteLine($"Result: {result}");
+        }
+        catch (DivideByZeroException)
+        {
+            Console.WriteLine("Error: Division by zero is not allowed!");
+        }
+    }
+}
+
+==============
+using System;
+
+class InvalidInputExample
+{
+    static void Main()
+    {
+        try
+        {
+            Console.Write("Enter a number: ");
+            int number = int.Parse(Console.ReadLine());
+            Console.WriteLine($"You entered: {number}");
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Error: Invalid input! Please enter a valid number.");
+        }
+    }
+}
+
+============
+
+using System;
+
+// Custom exception class
+class NegativeNumberException : Exception
+{
+    public NegativeNumberException(string message) : base(message)
+    {
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a positive number: ");
+        int number = int.Parse(Console.ReadLine());
+
+        try
+        {
+            if (number < 0)
+            {
+                throw new NegativeNumberException("Negative number is not allowed!");
+            }
+            Console.WriteLine($"You entered: {number}");
+        }
+        catch (NegativeNumberException ex)
+        {
+            Console.WriteLine($"Custom Exception: {ex.Message}");
+        }
+    }
+}
+

@@ -1,0 +1,10 @@
+@model Student
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    Name: <input asp-for="Name" /><br />
+    Email: <input asp-for="Email" /><br />
+    Address: <input asp-for="Address" /><br />
+    <button type="submit">Update</button>
+</form>
+<a asp-action="Index">Back to List</a>

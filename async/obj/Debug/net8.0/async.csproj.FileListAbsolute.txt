@@ -1,0 +1,15 @@
+/home/aashis-rijal/Desktop/net _centric/async/bin/Debug/net8.0/async
+/home/aashis-rijal/Desktop/net _centric/async/bin/Debug/net8.0/async.deps.json
+/home/aashis-rijal/Desktop/net _centric/async/bin/Debug/net8.0/async.runtimeconfig.json
+/home/aashis-rijal/Desktop/net _centric/async/bin/Debug/net8.0/async.dll
+/home/aashis-rijal/Desktop/net _centric/async/bin/Debug/net8.0/async.pdb
+/home/aashis-rijal/Desktop/net _centric/async/obj/Debug/net8.0/async.GeneratedMSBuildEditorConfig.editorconfig
+/home/aashis-rijal/Desktop/net _centric/async/obj/Debug/net8.0/async.AssemblyInfoInputs.cache
+/home/aashis-rijal/Desktop/net _centric/async/obj/Debug/net8.0/async.AssemblyInfo.cs
+/home/aashis-rijal/Desktop/net _centric/async/obj/Debug/net8.0/async.csproj.CoreCompileInputs.cache
+/home/aashis-rijal/Desktop/net _centric/async/obj/Debug/net8.0/async.sourcelink.json
+/home/aashis-rijal/Desktop/net _centric/async/obj/Debug/net8.0/async.dll
+/home/aashis-rijal/Desktop/net _centric/async/obj/Debug/net8.0/refint/async.dll
+/home/aashis-rijal/Desktop/net _centric/async/obj/Debug/net8.0/async.pdb
+/home/aashis-rijal/Desktop/net _centric/async/obj/Debug/net8.0/async.genruntimeconfig.cache
+/home/aashis-rijal/Desktop/net _centric/async/obj/Debug/net8.0/ref/async.dll

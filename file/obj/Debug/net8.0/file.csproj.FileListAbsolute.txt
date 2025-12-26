@@ -1,0 +1,15 @@
+/home/aashis-rijal/Desktop/net _centric/file/obj/Debug/net8.0/file.GeneratedMSBuildEditorConfig.editorconfig
+/home/aashis-rijal/Desktop/net _centric/file/obj/Debug/net8.0/file.AssemblyInfoInputs.cache
+/home/aashis-rijal/Desktop/net _centric/file/obj/Debug/net8.0/file.AssemblyInfo.cs
+/home/aashis-rijal/Desktop/net _centric/file/obj/Debug/net8.0/file.csproj.CoreCompileInputs.cache
+/home/aashis-rijal/Desktop/net _centric/file/obj/Debug/net8.0/file.sourcelink.json
+/home/aashis-rijal/Desktop/net _centric/file/bin/Debug/net8.0/file
+/home/aashis-rijal/Desktop/net _centric/file/bin/Debug/net8.0/file.deps.json
+/home/aashis-rijal/Desktop/net _centric/file/bin/Debug/net8.0/file.runtimeconfig.json
+/home/aashis-rijal/Desktop/net _centric/file/bin/Debug/net8.0/file.dll
+/home/aashis-rijal/Desktop/net _centric/file/bin/Debug/net8.0/file.pdb
+/home/aashis-rijal/Desktop/net _centric/file/obj/Debug/net8.0/file.dll
+/home/aashis-rijal/Desktop/net _centric/file/obj/Debug/net8.0/refint/file.dll
+/home/aashis-rijal/Desktop/net _centric/file/obj/Debug/net8.0/file.pdb
+/home/aashis-rijal/Desktop/net _centric/file/obj/Debug/net8.0/file.genruntimeconfig.cache
+/home/aashis-rijal/Desktop/net _centric/file/obj/Debug/net8.0/ref/file.dll

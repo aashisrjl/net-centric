@@ -1,0 +1,45 @@
+@model IEnumerable<Assignment_4.Models.Character>
+@{
+    ViewData["Title"] = "Character List";
+}
+
+<a asp-action="Create" class="btn btn-primary mb-3">Create Character</a>
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Movie ID</th>
+            <th>Actor ID</th>
+            <th>Character Name</th>
+            <th>Pay</th>
+            <th>Screentime</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var character in Model)
+            {
+                <tr>
+                    <td>@character.Id</td>
+                    <td>@character.MovieID</td>
+                    <td>@character.ActorID</td>
+                    <td>@character.CharacterName</td>
+                    <td>@character.Pay</td>
+                    <td>@character.Screentime</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@character.MovieID" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@character.MovieID" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td colspan="6" class="text-center">No characters found.</td></tr>
+        }
+    </tbody>
+</table>

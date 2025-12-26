@@ -1,0 +1,31 @@
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/Greeter
+/bin/Debug/net8.0/Greeter
+/bin/Debug/net8.0/Greeter.deps.json
+/bin/Debug/net8.0/Greeter.runtimeconfig.json
+/bin/Debug/net8.0/Greeter.dll
+/bin/Debug/net8.0/Greeter.pdb
+/obj/Debug/net8.0/Greeter.GeneratedMSBuildEditorConfig.editorconfig
+/obj/Debug/net8.0/Greeter.AssemblyInfoInputs.cache
+/obj/Debug/net8.0/Greeter.AssemblyInfo.cs
+/obj/Debug/net8.0/Greeter.csproj.CoreCompileInputs.cache
+/obj/Debug/net8.0/Greeter.sourcelink.json
+/obj/Debug/net8.0/Greeter.dll
+/obj/Debug/net8.0/refint/Greeter.dll
+/obj/Debug/net8.0/Greeter.pdb
+/obj/Debug/net8.0/Greeter.genruntimeconfig.cache
+/obj/Debug/net8.0/ref/Greeter.dll
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/bin/Debug/net8.0/Greeter
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/bin/Debug/net8.0/Greeter.deps.json
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/bin/Debug/net8.0/Greeter.runtimeconfig.json
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/bin/Debug/net8.0/Greeter.dll
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/bin/Debug/net8.0/Greeter.pdb
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/obj/Debug/net8.0/Greeter.GeneratedMSBuildEditorConfig.editorconfig
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/obj/Debug/net8.0/Greeter.AssemblyInfoInputs.cache
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/obj/Debug/net8.0/Greeter.AssemblyInfo.cs
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/obj/Debug/net8.0/Greeter.csproj.CoreCompileInputs.cache
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/obj/Debug/net8.0/Greeter.sourcelink.json
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/obj/Debug/net8.0/Greeter.dll
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/obj/Debug/net8.0/refint/Greeter.dll
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/obj/Debug/net8.0/Greeter.pdb
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/obj/Debug/net8.0/Greeter.genruntimeconfig.cache
+/home/aashis-rijal/Desktop/net _centric/Asian-.NetCentric-6thSem-June25/Assignment-1/greeter/obj/Debug/net8.0/ref/Greeter.dll

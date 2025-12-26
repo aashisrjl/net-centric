@@ -1,0 +1,53 @@
+@{
+    ViewData["Title"] = "Movies List";
+}
+
+
+<a asp-action="Create" class="btn btn-primary mb-3">Create Movie</a>
+<h1>@ViewData["Title"]</h1>
+
+@model IEnumerable<Assignment_4.Models.Movies>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Rating</th>
+            <th>Budget</th>
+            <th>Gross</th>
+            <th>Release Date</th>
+            <th>Genre</th>
+            <th>Runtime</th>
+            <th>Summary</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var movie in Model)
+            {
+                <tr>
+                    <td>@movie.Id</td>
+                    <td>@movie.Title</td>
+                    <td>@movie.Rating</td>
+                    <td>@movie.Budget</td>
+                    <td>@movie.Gross</td>
+                    <td>@movie.ReleaseDate?.ToString("yyyy-MM-dd")</td>
+                    <td>@movie.Genre</td>
+                    <td>@movie.Runtime</td>
+                    <td>@movie.Summary</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@movie.Id" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@movie.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td colspan="9" class="text-center">No movies found.</td></tr>
+        }
+    </tbody>
+</table>

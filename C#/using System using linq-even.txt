@@ -1,0 +1,67 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+======== even ===========
+class EvenNumbersLINQ
+{
+    static void Main()
+    {
+        List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+        // Using LINQ to filter even numbers
+        var evenNumbers = numbers.Where(n => n % 2 == 0);
+
+        Console.WriteLine("Even numbers in the list:");
+        foreach (var num in evenNumbers)
+        {
+            Console.Write(num + " ");
+        }
+    }
+}
+
+=================sort string =========
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Program
+{
+    static void Main()
+    {
+        List<string> names = new List<string> { "Aashis", "Riya", "Bimal", "Chandra" };
+
+        // Sort alphabetically using LINQ
+        var sortedNames = names.OrderBy(name => name).ToList();
+
+        Console.WriteLine("Sorted list (using LINQ):");
+        foreach (var name in sortedNames)
+        {
+            Console.WriteLine(name);
+        }
+    }
+}
+
+
+=== first num greater than 50
+using System;
+using System.Linq;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 10, 45, 55, 30, 60, 25 };
+
+        // Use LINQ to find the first number greater than 50
+        int firstGreaterThan50 = numbers.FirstOrDefault(n => n > 50);
+
+        if (firstGreaterThan50 != 0)
+            Console.WriteLine("First number greater than 50: " + firstGreaterThan50);
+        else
+            Console.WriteLine("No number greater than 50 found.");
+    }
+}
+
+

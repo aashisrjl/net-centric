@@ -1,0 +1,36 @@
+@model Assignment_4.Models.Character
+@{
+    ViewData["Title"] = "Edit Character";
+}
+
+<h2>Edit Character</h2>
+<form asp-action="Edit" method="post" class="mt-4">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group mb-3">
+        <label asp-for="MovieID" class="form-label"></label>
+        <input asp-for="MovieID" class="form-control" required />
+        <span asp-validation-for="MovieID" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="ActorID" class="form-label"></label>
+        <input asp-for="ActorID" class="form-control" required />
+        <span asp-validation-for="ActorID" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="CharacterName" class="form-label"></label>
+        <input asp-for="CharacterName" class="form-control" required />
+        <span asp-validation-for="CharacterName" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Pay" class="form-label"></label>
+        <input asp-for="Pay" class="form-control" type="number" step="0.01" required />
+        <span asp-validation-for="Pay" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="Screentime" class="form-label"></label>
+        <input asp-for="Screentime" class="form-control" type="number" step="1" required />
+        <span asp-validation-for="Screentime" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="characterlist" class="btn btn-secondary ms-2">Cancel</a>
+    </form>

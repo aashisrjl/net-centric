@@ -1,0 +1,15 @@
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/bin/Debug/net8.0/ASSIGNMENT 3
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/bin/Debug/net8.0/ASSIGNMENT 3.deps.json
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/bin/Debug/net8.0/ASSIGNMENT 3.runtimeconfig.json
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/bin/Debug/net8.0/ASSIGNMENT 3.dll
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/bin/Debug/net8.0/ASSIGNMENT 3.pdb
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/obj/Debug/net8.0/ASSIGNMENT 3.GeneratedMSBuildEditorConfig.editorconfig
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/obj/Debug/net8.0/ASSIGNMENT 3.AssemblyInfoInputs.cache
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/obj/Debug/net8.0/ASSIGNMENT 3.AssemblyInfo.cs
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/obj/Debug/net8.0/ASSIGNMENT 3.csproj.CoreCompileInputs.cache
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/obj/Debug/net8.0/ASSIGNMENT 3.sourcelink.json
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/obj/Debug/net8.0/ASSIGNMENT 3.dll
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/obj/Debug/net8.0/refint/ASSIGNMENT 3.dll
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/obj/Debug/net8.0/ASSIGNMENT 3.pdb
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/obj/Debug/net8.0/ASSIGNMENT 3.genruntimeconfig.cache
+/home/aashis-rijal/Downloads/6th sem/net _centric/Asian-.NetCentric-6thSem-June25/ASSIGNMENT 3/obj/Debug/net8.0/ref/ASSIGNMENT 3.dll

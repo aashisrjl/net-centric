@@ -1,0 +1,15 @@
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/bin/Debug/net8.0/HelloDotNet
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/bin/Debug/net8.0/HelloDotNet.deps.json
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/bin/Debug/net8.0/HelloDotNet.runtimeconfig.json
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/bin/Debug/net8.0/HelloDotNet.dll
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/bin/Debug/net8.0/HelloDotNet.pdb
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/obj/Debug/net8.0/HelloDotNet.GeneratedMSBuildEditorConfig.editorconfig
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/obj/Debug/net8.0/HelloDotNet.AssemblyInfoInputs.cache
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/obj/Debug/net8.0/HelloDotNet.AssemblyInfo.cs
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/obj/Debug/net8.0/HelloDotNet.csproj.CoreCompileInputs.cache
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/obj/Debug/net8.0/HelloDotNet.dll
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/obj/Debug/net8.0/refint/HelloDotNet.dll
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/obj/Debug/net8.0/HelloDotNet.pdb
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/obj/Debug/net8.0/HelloDotNet.genruntimeconfig.cache
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/obj/Debug/net8.0/ref/HelloDotNet.dll
+/home/aashis-rijal/Desktop/net _centric/HelloDotNet/obj/Debug/net8.0/HelloDotNet.sourcelink.json
