@@ -1,0 +1,147 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] arr = { 10, 20, 30, 40, 50 };
+
+        // Sum and Average
+        int sum = Sum(arr);
+        double avg = Average(arr);
+        Console.WriteLine("Sum = " + sum);
+        Console.WriteLine("Average = " + avg);
+
+        // Max and Min
+        Console.WriteLine("Maximum = " + Max(arr));
+        Console.WriteLine("Minimum = " + Min(arr));
+
+        // Reverse String
+        string text = "DotNet";
+        Console.WriteLine("Reversed String = " + ReverseString(text));
+
+        // Count vowels and consonants
+        CountVowelsConsonants("Programming");
+
+        // Sort array
+        SortAscending(arr);
+        Console.WriteLine("Ascending Order:");
+        PrintArray(arr);
+
+        SortDescending(arr);
+        Console.WriteLine("Descending Order:");
+        PrintArray(arr);
+    }
+
+    // 1. Sum of array =============== 
+    static int Sum(int[] arr)
+    {
+        int sum = 0;
+        for (int i = 0; i < arr.Length; i++)
+            sum += arr[i];
+        return sum;
+    }
+
+    // 2. Average of array =============
+    static double Average(int[] arr)
+    {
+        return (double)Sum(arr) / arr.Length;
+    }
+
+    // 3. Maximum element ===============
+    static int Max(int[] arr)
+    {
+        int max = arr[0];
+        for (int i = 1; i < arr.Length; i++)
+            if (arr[i] > max)
+                max = arr[i];
+        return max;
+    }
+
+    // 4. Minimum element ================
+    static int Min(int[] arr)
+    {
+        int min = arr[0];
+        for (int i = 1; i < arr.Length; i++)
+            if (arr[i] < min)
+                min = arr[i];
+        return min;
+    }
+
+    // 5. Reverse string without built-in function ================
+    static string ReverseString(string str)
+    {
+        char[] ch = new char[str.Length];
+        int j = 0;
+
+        for (int i = str.Length - 1; i >= 0; i--)
+            ch[j++] = str[i];
+
+        return new string(ch);
+    }
+
+    // 6. Count vowels and consonants ================
+    static void CountVowelsConsonants(string str)
+    {
+        int vowels = 0, consonants = 0;
+
+        for (int i = 0; i < str.Length; i++)
+        {
+            char ch = char.ToLower(str[i]);
+
+            if (ch >= 'a' && ch <= 'z')
+            {
+                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+                    vowels++;
+                else
+                    consonants++;
+            }
+        }
+
+        Console.WriteLine("Vowels = " + vowels);
+        Console.WriteLine("Consonants = " + consonants);
+    }
+
+    // 7. Sort array ascending =======================
+    static void SortAscending(int[] arr)
+    {
+        for (int i = 0; i < arr.Length - 1; i++)
+        {
+            for (int j = i + 1; j < arr.Length; j++)
+            {
+                if (arr[i] > arr[j])
+                {
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+    }
+
+    // 8. Sort array descending =========================
+    static void SortDescending(int[] arr)
+    {
+        for (int i = 0; i < arr.Length - 1; i++)
+        {
+            for (int j = i + 1; j < arr.Length; j++)
+            {
+                if (arr[i] < arr[j])
+                {
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+    }
+
+    // Print array
+    static void PrintArray(int[] arr)
+    {
+        for (int i = 0; i < arr.Length; i++)
+            Console.Write(arr[i] + " ");
+        Console.WriteLine();
+    }
+}
+

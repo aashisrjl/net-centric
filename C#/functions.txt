@@ -1,0 +1,67 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // 1. Check if a number is prime ===================== 
+        Console.Write("Enter a number to check if it's prime: ");
+        int num = int.Parse(Console.ReadLine());
+        Console.WriteLine(IsPrime(num) ? $"{num} is prime." : $"{num} is not prime.");
+
+        // 2. Calculate nth Fibonacci number =======================
+        Console.Write("Enter n for Fibonacci: ");
+        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine($"Fibonacci({n}) = {Fibonacci(n)}");
+
+        // 3. Swap two numbers ===============================
+        Console.Write("Enter first number to swap: ");
+        int a = int.Parse(Console.ReadLine());
+        Console.Write("Enter second number to swap: ");
+        int b = int.Parse(Console.ReadLine());
+        Console.WriteLine($"Before swap: a = {a}, b = {b}");
+        Swap(ref a, ref b);
+        Console.WriteLine($"After swap: a = {a}, b = {b}");
+
+        // 4. Calculate sum using recursion
+        Console.Write("Enter a number to calculate sum from 1 to n: ");
+        int sumNum = int.Parse(Console.ReadLine());
+        Console.WriteLine($"Sum = {RecursiveSum(sumNum)}");
+    }
+
+    // Function to check if a number is prime ===================
+    static bool IsPrime(int number)
+    {
+        if (number <= 1) return false;
+        for (int i = 2; i <= Math.Sqrt(number); i++)
+        {
+            if (number % i == 0)
+                return false;
+        }
+        return true;
+    }
+
+    // Function to calculate nth Fibonacci number ==============
+    static int Fibonacci(int n)
+    {
+        if (n <= 0) return 0;
+        if (n == 1) return 1;
+        return Fibonacci(n - 1) + Fibonacci(n - 2);
+    }
+
+    // Function to swap two numbers using ref ================= 
+    static void Swap(ref int x, ref int y)
+    {
+        int temp = x;
+        x = y;
+        y = temp;
+    }
+
+    // Recursive function to calculate sum from 1 to n ===============
+    static int RecursiveSum(int n)
+    {
+        if (n <= 0) return 0;
+        return n + RecursiveSum(n - 1);
+    }
+}
+
